@@ -45,7 +45,7 @@ class OptionPositionSnapshot(Base):
     underlying_price: Mapped[float | None] = mapped_column(Numeric(12, 4))
     iv: Mapped[float | None] = mapped_column(Numeric(8, 4))
     delta: Mapped[float | None] = mapped_column(Numeric(8, 4))
-        gamma: Mapped[float | None] = mapped_column(Numeric(8, 4))
+    gamma: Mapped[float | None] = mapped_column(Numeric(8, 4))
     theta: Mapped[float | None] = mapped_column(Numeric(8, 4))
     vega: Mapped[float | None] = mapped_column(Numeric(8, 4))
 
